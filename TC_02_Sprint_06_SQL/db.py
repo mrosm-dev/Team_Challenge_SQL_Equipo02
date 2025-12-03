@@ -142,7 +142,7 @@ cursor.execute("SELECT Id_proveedor FROM proveedor")
 proveedor_ids = [row[0] for row in cursor.fetchall()]
 
 
-for compra in range(20):
+for compra in range(100):
     pro = random.choice(productos)
     provee = random.choice(proveedor_ids)
     cantidad = random.randint(1,10)
@@ -157,7 +157,7 @@ cursor.execute("SELECT Id_cliente FROM clientes")
 clientes_ids = [row[0] for row in cursor.fetchall()]
 
 
-for compra in range(20):
+for compra in range(100):
     pro = random.choice(productos)
     provee = random.choice(clientes_ids)
     cantidad = random.randint(1,10)
